@@ -1,0 +1,20 @@
+lst = []
+size = int(input("Enter the size of the list:"))
+print(f"Enter {size} numbers in the list:")
+for i in range(size):
+    val = int(input())
+    lst.append(val)
+countt = int(input("Which val you need to count:"))
+minn = min(lst)
+maxx = max(lst)
+summ = sum(lst)
+rev = lst[::-1]
+sortt = sorted(lst)
+cnt = lst.count(countt)
+print(f"List:{lst}")
+print(f"Smallest value in the list:{minn}")
+print(f"Largest value in the list:{maxx}")
+print(f"Sorted list:{sortt}")
+print(f"Reversed list:{rev}")
+print(f"Number of {countt} in the list:{cnt}")
+print(f"Sum of numbers in the list:{summ}")
